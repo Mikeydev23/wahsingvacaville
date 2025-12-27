@@ -568,3 +568,151 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* VIBE SECTION */
+.vibe-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.collage {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 170px;
+}
+
+.tile {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: var(--shadow);
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tile-1 {
+  grid-row: span 2;
+}
+.tile-4 {
+  grid-column: span 2;
+}
+
+.vibe-copy {
+  max-width: 560px;
+}
+
+.vibe-title {
+  margin: 0 0 14px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(34px, 3.2vw, 54px);
+  letter-spacing: -0.03em;
+}
+
+.accent-red {
+  color: var(--red2);
+}
+
+.vibe-text {
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+.vibe-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* SIGNATURE FLAVORS */
+.center-title {
+  text-align: center;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(40px, 4vw, 76px);
+  letter-spacing: -0.03em;
+}
+
+.center-underline {
+  width: 110px;
+  height: 2px;
+  margin: 14px auto 34px;
+  background: rgba(179, 27, 27, 0.9);
+  border-radius: 999px;
+}
+
+.flavor-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.flavor-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+  padding: 26px 26px 22px;
+  box-shadow: var(--shadow);
+}
+
+.flavor-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.flavor-card h3 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+}
+
+.price {
+  font-weight: 900;
+  color: rgba(244, 196, 48, 0.92);
+  letter-spacing: 0.04em;
+}
+
+.flavor-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (min-width: 900px) {
+  .vibe-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .flavor-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .collage {
+    grid-auto-rows: 190px;
+  }
+}
