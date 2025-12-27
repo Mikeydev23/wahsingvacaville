@@ -3,384 +3,225 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wah Sing Mongolian BBQ & Hot Pot - Vacaville</title>
-    <meta
-      name="description"
-      content="Wah Sing Mongolian BBQ & Hot Pot in Vacaville. Mongolian BBQ, hot pot, family dinners, location & hours."
+    <title>Wah Sing Mongolian BBQ & Hot Pot</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="bg-black text-white">
-    <!-- Header -->
-    <header
-      class="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur"
-    >
-      <div
-        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3"
-      >
-        <div class="flex items-center gap-3">
-          <div class="h-10 w-10 overflow-hidden rounded-full bg-white/10">
-            <!-- If you have a real circle logo, replace this with <img> -->
-          </div>
-          <div class="leading-tight">
-            <div class="text-lg font-extrabold tracking-wide">WAH SING</div>
-            <div
-              class="text-xs font-semibold tracking-[0.35em] text-yellow-400"
-            >
-              MONGOLIAN BBQ & HOT POT
+  <body>
+    <!-- NAV -->
+    <header class="site-header">
+      <nav class="nav">
+        <div class="container nav-inner">
+          <a class="brand" href="#top" aria-label="Wah Sing Home">
+            <img
+              class="brand-logo"
+              src="assets/wahsing-logo.png"
+              alt="Wah Sing Mongolian Hot Pot & BBQ logo"
+            />
+            <div class="brand-text">
+              <div class="brand-name">WAH SING</div>
+              <div class="brand-sub">Mongolian Hot Pot & BBQ</div>
             </div>
+          </a>
+
+          <div class="nav-links">
+            <a href="#experience">Experience</a>
+            <a href="#location">Visit</a>
+          </div>
+
+          <div class="nav-cta">
+            <a class="phone" href="tel:7074485685">(707) 448-5685</a>
+            <a class="btn btn-gold" href="#location">Get Directions</a>
           </div>
         </div>
-
-        <nav
-          class="hidden items-center gap-6 text-sm font-semibold tracking-wide md:flex"
-        >
-          <a class="text-white/70 hover:text-white" href="#experience"
-            >EXPERIENCE</a
-          >
-          <a class="text-white/70 hover:text-white" href="#menu">MENU</a>
-          <a class="text-white/70 hover:text-white" href="#assistant"
-            >✨ AI ASSISTANT</a
-          >
-          <a class="text-white/70 hover:text-white" href="#family"
-            >FAMILY DINNERS</a
-          >
-          <a class="text-white/70 hover:text-white" href="#contact">LOCATION</a>
-          <a
-            class="inline-flex items-center gap-2 rounded-full border border-white/15 px-3 py-1 text-white/90 hover:bg-white/5"
-            href="tel:+17079995443"
-          >
-            📞 (707) 999-5443
-          </a>
-        </nav>
-
-        <a
-          class="inline-flex items-center justify-center rounded-full bg-yellow-400 px-4 py-2 text-sm font-extrabold tracking-wide text-black hover:bg-yellow-300"
-          href="#menu"
-        >
-          ✨ DESIGN BOWL
-        </a>
-      </div>
+      </nav>
     </header>
 
-    <!-- Hero -->
-    <section id="experience" class="relative overflow-hidden">
-      <div class="pointer-events-none absolute inset-0 opacity-70">
+    <!-- HERO -->
+    <main id="top">
+      <section class="hero" aria-label="Hero section">
         <div
-          class="absolute -left-40 -top-40 h-[520px] w-[520px] rounded-full bg-yellow-400/15 blur-3xl"
+          class="hero-bg"
+          role="img"
+          aria-label="Food background image"
         ></div>
-        <div
-          class="absolute -right-48 -top-20 h-[520px] w-[520px] rounded-full bg-red-500/10 blur-3xl"
-        ></div>
-      </div>
+        <div class="hero-overlay"></div>
 
-      <div class="mx-auto max-w-6xl px-4 py-14">
-        <div class="grid gap-10 md:grid-cols-2 md:items-center">
-          <!-- LEFT: z-10 so text never goes behind the image -->
-          <div class="relative z-10">
-            <div
-              class="inline-flex items-center rounded-full border border-yellow-400/25 bg-yellow-400/10 px-3 py-1 text-xs font-bold tracking-[0.25em] text-yellow-200"
-            >
-              ALL-YOU-CAN-EAT BUFFET
-            </div>
+        <div class="container hero-content">
+          <div class="pill">ALL-YOU-CAN-EAT BUFFET</div>
 
-            <h1 class="mt-5 font-black leading-[0.9] tracking-tight">
-              <span class="block text-6xl md:text-7xl">ENDLESS</span>
-              <span class="block text-6xl italic text-red-500 md:text-7xl"
-                >COMBINATIONS</span
-              >
-            </h1>
+          <h1 class="hero-title">
+            ENDLESS <br />
+            <span class="hero-title-accent">COMBINATIONS.</span>
+          </h1>
 
-            <p class="mt-5 max-w-xl text-lg text-white/70">
-              Build your bowl, pick your meats and veggies, then watch it sizzle
-              on the grill. Fresh ingredients, bold sauces, and the kind of meal
-              that feels like an event.
-            </p>
+          <p class="hero-subtitle">
+            Thinly sliced meats, crisp bok choy, savory noodles, and house-made
+            sauces. Create your masterpiece and watch it sizzle.
+          </p>
 
-            <div class="mt-8 flex flex-wrap items-center gap-3">
-              <a
-                class="inline-flex items-center justify-center rounded-full bg-yellow-400 px-5 py-3 text-sm font-extrabold tracking-wide text-black hover:bg-yellow-300"
-                href="#menu"
-              >
-                Design Your Bowl ✨
-              </a>
-              <a
-                class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-extrabold tracking-wide text-white hover:bg-white/10"
-                href="#menu"
-              >
-                See Menu Highlights
-              </a>
-            </div>
-
-            <div
-              class="mt-8 flex flex-wrap gap-2 text-xs font-bold tracking-[0.25em] text-white/60"
-            >
-              <span
-                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
-                >BEEF</span
-              >
-              <span
-                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
-                >LAMB</span
-              >
-              <span
-                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
-                >PORK</span
-              >
-              <span
-                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
-                >CHICKEN</span
-              >
-              <span
-                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
-                >BOK CHOY</span
-              >
-              <span
-                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
-                >BROCCOLI</span
-              >
-              <span
-                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
-                >NOODLES</span
-              >
+          <div class="ticker" aria-label="Ingredients ticker">
+            <div class="ticker-track">
+              <span>Beef</span><span class="dot">•</span> <span>Lamb</span
+              ><span class="dot">•</span> <span>Pork</span
+              ><span class="dot">•</span> <span>Chicken</span
+              ><span class="dot">•</span> <span>Bok Choy</span
+              ><span class="dot">•</span> <span>Broccoli</span
+              ><span class="dot">•</span> <span>Bean Sprouts</span
+              ><span class="dot">•</span> <span>Cabbage</span
+              ><span class="dot">•</span> <span>Noodles</span
+              ><span class="dot">•</span>
+              <span>Pineapple</span>
             </div>
           </div>
 
-          <!-- RIGHT: z-0 -->
-          <div class="relative z-0">
-            <div
-              class="rounded-3xl border border-white/10 bg-white/5 p-4 shadow-2xl shadow-black/60"
+          <div class="hero-actions">
+            <a class="btn btn-gold btn-lg" href="#experience"
+              >Design Your Bowl ✨</a
             >
-              <div
-                class="overflow-hidden rounded-2xl border border-white/10 bg-black"
-              >
+            <a class="btn btn-ghost btn-lg" href="#experience"
+              >See How It Works</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="two-cards">
+            <!-- Left card -->
+            <article class="feature">
+              <div class="feature-media">
                 <img
-                  class="h-[360px] w-full object-cover"
-                  src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1600&q=80"
-                  alt="Restaurant atmosphere placeholder"
+                  src="assets/mongolian bbq part.jpg"
+                  alt="Mongolian BBQ on grill"
+                  loading="lazy"
                 />
-              </div>
+                <div class="feature-overlay"></div>
 
-              <div class="mt-4 grid grid-cols-3 gap-3">
-                <div
-                  class="rounded-2xl border border-white/10 bg-black/40 p-3 text-center"
-                >
-                  <div class="text-sm font-extrabold">Fast</div>
-                  <div class="text-xs text-white/60">Build. Grill. Eat.</div>
-                </div>
-                <div
-                  class="rounded-2xl border border-white/10 bg-black/40 p-3 text-center"
-                >
-                  <div class="text-sm font-extrabold">Fresh</div>
-                  <div class="text-xs text-white/60">Veggies + sauces</div>
-                </div>
-                <div
-                  class="rounded-2xl border border-white/10 bg-black/40 p-3 text-center"
-                >
-                  <div class="text-sm font-extrabold">Fun</div>
-                  <div class="text-xs text-white/60">Great for groups</div>
+                <div class="feature-text">
+                  <h2>Build Your Sizzle</h2>
+                  <p class="tagline">MEAT · VEG · NOODLE · REPEAT</p>
                 </div>
               </div>
 
-              <div class="mt-4 text-xs text-white/50">
-                Demo note: photos are placeholders. Replace with your real food
-                photos anytime.
+              <p class="feature-body">
+                Load your bowl with a mountain of variety. Choose from proteins,
+                fresh vegetables, and noodles. Our chefs bring it all together
+                on the massive iron grill.
+              </p>
+            </article>
+
+            <!-- Right card -->
+            <article class="feature">
+              <div class="feature-media">
+                <img
+                  src="assets/hotpot.jpg"
+                  alt="Traditional hot pot"
+                  loading="lazy"
+                />
+                <div class="feature-overlay"></div>
+
+                <div class="feature-text">
+                  <h2>Traditional Hot Pot</h2>
+                  <p class="tagline red">SIMMER &amp; CELEBRATE</p>
+                </div>
               </div>
-            </div>
+
+              <p class="feature-body">
+                Choose your broth and cook fresh meats, seafood, and vegetables
+                right at your table. Hot pot is social, comforting, and perfect
+                for sharing.
+              </p>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Menu -->
-    <section id="menu" class="border-t border-white/10">
-      <div class="mx-auto max-w-6xl px-4 py-14">
-        <h2 class="text-4xl font-black tracking-tight md:text-5xl">
-          Menu Highlights
-        </h2>
-        <p class="mt-3 max-w-2xl text-white/70">
-          Keep it simple on day one: top sellers, buffet details, and a clean
-          call to action.
-        </p>
+      <!-- LOCATION (Visit Us + Map like Image 1) -->
+      <section id="location" class="section section-dark">
+        <div class="container">
+          <div class="location-grid">
+            <div class="visit-card">
+              <h2 class="visit-title">Visit Us</h2>
 
-        <div class="mt-10 grid gap-5 md:grid-cols-3">
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div class="text-sm font-bold tracking-wide text-yellow-300">
-              Build Your Bowl
-            </div>
-            <div class="mt-2 text-xl font-extrabold">Mongolian BBQ</div>
-            <div class="mt-2 text-white/70">
-              Choose meats, veggies, noodles, and signature sauces. We grill it
-              fresh.
-            </div>
-          </div>
-
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div class="text-sm font-bold tracking-wide text-yellow-300">
-              Simmer + Share
-            </div>
-            <div class="mt-2 text-xl font-extrabold">Hot Pot</div>
-            <div class="mt-2 text-white/70">
-              Cozy broth, fresh ingredients, and a fun table experience.
-            </div>
-          </div>
-
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div class="text-sm font-bold tracking-wide text-yellow-300">
-              Best Value
-            </div>
-            <div class="mt-2 text-xl font-extrabold">All-You-Can-Eat</div>
-            <div class="mt-2 text-white/70">
-              Great for families and groups. Ask about buffet details.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- AI Assistant -->
-    <section id="assistant" class="border-t border-white/10">
-      <div class="mx-auto max-w-6xl px-4 py-14">
-        <h2 class="text-4xl font-black tracking-tight md:text-5xl">
-          AI Assistant
-        </h2>
-        <p class="mt-3 max-w-2xl text-white/70">
-          Optional upgrade: automated FAQs, hours, specials, and event
-          inquiries.
-        </p>
-
-        <div class="mt-10 rounded-3xl border border-white/10 bg-white/5 p-8">
-          <div class="grid gap-6 md:grid-cols-2 md:items-center">
-            <div>
-              <div class="text-sm font-bold tracking-wide text-yellow-300">
-                Upgrade Path
+              <div class="visit-block">
+                <div class="label">LOCATION</div>
+                <div class="address-line1">2018 Nut Tree Rd</div>
+                <div class="address-line2">
+                  Vacaville, CA 95687<br />
+                  Regency Park Plaza
+                </div>
               </div>
-              <div class="mt-2 text-2xl font-extrabold">
-                Instant answers for customers
+
+              <div class="hours-grid">
+                <div class="hours">
+                  <div class="hours-day">Tue - Sat</div>
+                  <div class="hours-time">11:00 AM - 3:00 PM</div>
+                  <div class="hours-time">4:00 PM - 9:00 PM</div>
+                </div>
+
+                <div class="hours">
+                  <div class="hours-day">Sunday</div>
+                  <div class="hours-time">12:00 PM - 3:00 PM</div>
+                  <div class="hours-time">4:00 PM - 9:00 PM</div>
+                </div>
               </div>
-              <ul class="mt-4 list-disc space-y-2 pl-5 text-white/70">
-                <li>Hours, location, parking, and buffet pricing</li>
-                <li>Group reservations and birthday inquiries</li>
-                <li>Menu questions and ingredient guidance</li>
-              </ul>
+
+              <div class="reservations">RESERVATIONS: (707) 448-5685</div>
+
+              <a
+                class="btn btn-gold btn-wide"
+                href="https://maps.google.com?q=2018+Nut+Tree+Rd,+Vacaville,+CA+95687"
+                target="_blank"
+                rel="noopener"
+              >
+                GET DIRECTIONS
+              </a>
             </div>
 
-            <div class="rounded-2xl border border-white/10 bg-black/40 p-6">
-              <div class="text-sm font-bold">Demo Note</div>
-              <div class="mt-2 text-white/70">
-                AI is optional and can be added later. The core site is static
-                and fast.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Family Dinners -->
-    <section id="family" class="border-t border-white/10">
-      <div class="mx-auto max-w-6xl px-4 py-14">
-        <h2 class="text-4xl font-black tracking-tight md:text-5xl">
-          Family Dinners
-        </h2>
-        <p class="mt-3 max-w-2xl text-white/70">
-          Great for groups. Great for celebrations. Bring the crew.
-        </p>
-
-        <div class="mt-10 grid gap-5 md:grid-cols-3">
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div class="text-xl font-extrabold">Group-Friendly Seating</div>
-            <div class="mt-2 text-white/70">
-              Easy to host birthdays and big dinners.
-            </div>
-          </div>
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div class="text-xl font-extrabold">Fast Turnaround</div>
-            <div class="mt-2 text-white/70">
-              Build-and-go flow keeps things moving.
-            </div>
-          </div>
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div class="text-xl font-extrabold">Custom For Everyone</div>
-            <div class="mt-2 text-white/70">
-              Everyone eats what they actually want.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact / Location -->
-    <section id="contact" class="border-t border-white/10">
-      <div class="mx-auto max-w-6xl px-4 py-14">
-        <h2 class="text-4xl font-black tracking-tight md:text-5xl">
-          Location & Hours
-        </h2>
-        <p class="mt-3 max-w-2xl text-white/70">
-          For the demo, we’re using a safe “search” link. Replace with your
-          exact address and a real map embed when ready.
-        </p>
-
-        <div class="mt-10 grid gap-6 md:grid-cols-2">
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div class="text-sm font-semibold text-white/80">Call</div>
-            <a
-              href="tel:+17079995443"
-              class="mt-2 inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm font-bold text-white/90 hover:bg-white/5"
-            >
-              📞 (707) 999-5443
-            </a>
-
-            <div class="mt-6 text-sm font-semibold text-white/80">
-              Directions
-            </div>
-            <a
-              class="mt-2 inline-flex items-center justify-center rounded-full bg-yellow-400 px-4 py-2 text-sm font-extrabold text-black hover:bg-yellow-300"
-              href="https://www.google.com/maps/search/?api=1&query=Wah+Sing+Mongolian+BBQ+%26+Hot+Pot+Vacaville"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open in Google Maps →
-            </a>
-
-            <div class="mt-6 text-sm font-semibold text-white/80">Hours</div>
-            <div class="mt-2 text-sm text-white/70">
-              <div>Mon–Thu: 11:00 AM – 9:00 PM</div>
-              <div>Fri–Sat: 11:00 AM – 10:00 PM</div>
-              <div>Sun: 11:00 AM – 9:00 PM</div>
-              <div class="mt-2 text-xs text-white/50">
-                Update these to your real hours.
-              </div>
-            </div>
-          </div>
-
-          <!-- Embedded Google Map -->
-          <div
-            class="rounded-2xl border border-white/10 bg-white/5 overflow-hidden"
-          >
-            <div class="relative aspect-[4/3] md:aspect-[16/10]">
+            <div class="map-card" aria-label="Google Map embed">
+              <!-- Your exact iframe request -->
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2009.417984602407!2d-121.95463269459343!3d38.350739411415105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80853d4359265c49%3A0x82177a8efea3be0!2sWah%20Sing%20Mongolian%20BBQ%20%26%20Hot%20Pot!5e0!3m2!1sen!2sus!4v1766863972645!5m2!1sen!2sus"
-                class="absolute inset-0 h-full w-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1564.462035496526!2d-121.95463269459343!3d38.350739411415105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80853d4359265c49%3A0x82177a8efea3be0!2sWah%20Sing%20Mongolian%20BBQ%20%26%20Hot%20Pot!5e0!3m2!1sen!2sus!4v1766866415880!5m2!1sen!2sus"
+                width="600"
+                height="450"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                title="Wah Sing Mongolian BBQ & Hot Pot Map"
               ></iframe>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="border-t border-white/10">
-      <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-white/60">
-        © <span id="year"></span> Wah Sing Mongolian BBQ & Hot Pot. Demo site
-        for preview and portfolio.
-      </div>
-    </footer>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container footer-inner">
+          <img
+            class="footer-logo"
+            src="assets/wahsing-logo.png"
+            alt="Wah Sing logo"
+            loading="lazy"
+          />
+          <div class="footer-text">
+            © <span id="year"></span> Wah Sing Restaurant
+          </div>
+        </div>
+      </footer>
+    </main>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
