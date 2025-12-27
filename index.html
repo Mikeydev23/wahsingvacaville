@@ -1,88 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Wah Sing | Mongolian BBQ & Hot Pot</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wah Sing Mongolian BBQ & Hot Pot - Vacaville</title>
     <meta
       name="description"
-      content="Wah Sing Mongolian BBQ & Hot Pot in Vacaville. Endless combinations, fresh ingredients, and all-you-can-eat vibes."
+      content="Wah Sing Mongolian BBQ & Hot Pot in Vacaville. Mongolian BBQ, hot pot, family dinners, location & hours."
     />
-
-    <!-- Tailwind via CDN for fast demo. Later: compile Tailwind for production. -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body class="bg-black text-white">
-    <!-- Top Bar -->
+    <!-- Header -->
     <header
-      class="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur"
+      class="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur"
     >
       <div
-        class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3"
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3"
       >
-        <a href="#top" class="flex items-center gap-3">
-          <img
-            src="./assets/wahsing-logo.png"
-            alt="Wah Sing Mongolian BBQ & Hot Pot"
-            class="site-logo"
-          />
-        </a>
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 overflow-hidden rounded-full bg-white/10">
+            <!-- If you have a real circle logo, replace this with <img> -->
+          </div>
+          <div class="leading-tight">
+            <div class="text-lg font-extrabold tracking-wide">WAH SING</div>
+            <div
+              class="text-xs font-semibold tracking-[0.35em] text-yellow-400"
+            >
+              MONGOLIAN BBQ & HOT POT
+            </div>
+          </div>
+        </div>
 
-        <nav class="hidden items-center gap-6 text-sm text-white/80 md:flex">
-          <a class="hover:text-white" href="#experience">Experience</a>
-          <a class="hover:text-white" href="#menu">Menu</a>
-          <a class="hover:text-white" href="#family">Family Dinners</a>
-          <a class="hover:text-white" href="#contact">Location</a>
-        </nav>
-
-        <div class="flex items-center gap-2">
+        <nav
+          class="hidden items-center gap-6 text-sm font-semibold tracking-wide md:flex"
+        >
+          <a class="text-white/70 hover:text-white" href="#experience"
+            >EXPERIENCE</a
+          >
+          <a class="text-white/70 hover:text-white" href="#menu">MENU</a>
+          <a class="text-white/70 hover:text-white" href="#assistant"
+            >✨ AI ASSISTANT</a
+          >
+          <a class="text-white/70 hover:text-white" href="#family"
+            >FAMILY DINNERS</a
+          >
+          <a class="text-white/70 hover:text-white" href="#contact">LOCATION</a>
           <a
+            class="inline-flex items-center gap-2 rounded-full border border-white/15 px-3 py-1 text-white/90 hover:bg-white/5"
             href="tel:+17079995443"
-            class="hidden rounded-full border border-white/15 px-4 py-2 text-sm text-white/90 hover:border-white/30 md:inline-flex"
           >
             📞 (707) 999-5443
           </a>
-          <a
-            href="#design"
-            class="rounded-full bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300"
-          >
-            ✨ Design Bowl
-          </a>
-        </div>
+        </nav>
+
+        <a
+          class="inline-flex items-center justify-center rounded-full bg-yellow-400 px-4 py-2 text-sm font-extrabold tracking-wide text-black hover:bg-yellow-300"
+          href="#menu"
+        >
+          ✨ DESIGN BOWL
+        </a>
       </div>
     </header>
 
     <!-- Hero -->
-    <main id="top">
-      <section class="relative overflow-hidden">
-        <div class="hero-bg"></div>
+    <section id="experience" class="relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0 opacity-70">
         <div
-          class="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:py-24"
-        >
-          <div class="relative">
+          class="absolute -left-40 -top-40 h-[520px] w-[520px] rounded-full bg-yellow-400/15 blur-3xl"
+        ></div>
+        <div
+          class="absolute -right-48 -top-20 h-[520px] w-[520px] rounded-full bg-red-500/10 blur-3xl"
+        ></div>
+      </div>
+
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <div class="grid gap-10 md:grid-cols-2 md:items-center">
+          <!-- LEFT: z-10 so text never goes behind the image -->
+          <div class="relative z-10">
             <div
-              class="inline-flex items-center gap-2 rounded-full border border-yellow-400/30 bg-yellow-400/10 px-3 py-1 text-xs tracking-widest text-yellow-200"
+              class="inline-flex items-center rounded-full border border-yellow-400/25 bg-yellow-400/10 px-3 py-1 text-xs font-bold tracking-[0.25em] text-yellow-200"
             >
               ALL-YOU-CAN-EAT BUFFET
             </div>
 
-            <h1 class="mt-6 hero-title">
-              ENDLESS
-              <span class="hero-accent">COMBINATIONS.</span>
+            <h1 class="mt-5 font-black leading-[0.9] tracking-tight">
+              <span class="block text-6xl md:text-7xl">ENDLESS</span>
+              <span class="block text-6xl italic text-red-500 md:text-7xl"
+                >COMBINATIONS</span
+              >
             </h1>
 
-            <p class="mt-5 max-w-xl text-base text-white/75 md:text-lg">
+            <p class="mt-5 max-w-xl text-lg text-white/70">
               Build your bowl, pick your meats and veggies, then watch it sizzle
               on the grill. Fresh ingredients, bold sauces, and the kind of meal
               that feels like an event.
@@ -90,421 +101,288 @@
 
             <div class="mt-8 flex flex-wrap items-center gap-3">
               <a
-                href="#design"
-                class="rounded-full bg-yellow-400 px-6 py-3 text-sm font-semibold text-black hover:bg-yellow-300"
+                class="inline-flex items-center justify-center rounded-full bg-yellow-400 px-5 py-3 text-sm font-extrabold tracking-wide text-black hover:bg-yellow-300"
+                href="#menu"
               >
                 Design Your Bowl ✨
               </a>
               <a
+                class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-extrabold tracking-wide text-white hover:bg-white/10"
                 href="#menu"
-                class="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white/90 hover:border-white/30"
               >
                 See Menu Highlights
               </a>
             </div>
 
-            <div class="mt-8 flex flex-wrap gap-3 text-xs text-white/60">
-              <span class="pill">BEEF</span>
-              <span class="pill">LAMB</span>
-              <span class="pill">PORK</span>
-              <span class="pill">CHICKEN</span>
-              <span class="pill">BOK CHOY</span>
-              <span class="pill">BROCCOLI</span>
-              <span class="pill">NOODLES</span>
+            <div
+              class="mt-8 flex flex-wrap gap-2 text-xs font-bold tracking-[0.25em] text-white/60"
+            >
+              <span
+                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
+                >BEEF</span
+              >
+              <span
+                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
+                >LAMB</span
+              >
+              <span
+                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
+                >PORK</span
+              >
+              <span
+                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
+                >CHICKEN</span
+              >
+              <span
+                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
+                >BOK CHOY</span
+              >
+              <span
+                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
+                >BROCCOLI</span
+              >
+              <span
+                class="rounded-full border border-white/10 bg-white/5 px-3 py-2"
+                >NOODLES</span
+              >
             </div>
           </div>
 
-          <div class="relative">
-            <div class="hero-card">
+          <!-- RIGHT: z-0 -->
+          <div class="relative z-0">
+            <div
+              class="rounded-3xl border border-white/10 bg-white/5 p-4 shadow-2xl shadow-black/60"
+            >
               <div
-                class="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10"
+                class="overflow-hidden rounded-2xl border border-white/10 bg-black"
               >
                 <img
-                  class="h-full w-full object-cover"
-                  alt="Hot pot bowl"
-                  src="https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&fit=crop&q=80&w=1200"
-                  loading="lazy"
+                  class="h-[360px] w-full object-cover"
+                  src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1600&q=80"
+                  alt="Restaurant atmosphere placeholder"
                 />
               </div>
-              <div class="mt-4 grid gap-3 md:grid-cols-3">
-                <div class="mini-card">
-                  <div class="mini-title">Fast</div>
-                  <div class="mini-sub">Build. Grill. Eat.</div>
+
+              <div class="mt-4 grid grid-cols-3 gap-3">
+                <div
+                  class="rounded-2xl border border-white/10 bg-black/40 p-3 text-center"
+                >
+                  <div class="text-sm font-extrabold">Fast</div>
+                  <div class="text-xs text-white/60">Build. Grill. Eat.</div>
                 </div>
-                <div class="mini-card">
-                  <div class="mini-title">Fresh</div>
-                  <div class="mini-sub">Veggies + sauces</div>
+                <div
+                  class="rounded-2xl border border-white/10 bg-black/40 p-3 text-center"
+                >
+                  <div class="text-sm font-extrabold">Fresh</div>
+                  <div class="text-xs text-white/60">Veggies + sauces</div>
                 </div>
-                <div class="mini-card">
-                  <div class="mini-title">Fun</div>
-                  <div class="mini-sub">Great for groups</div>
+                <div
+                  class="rounded-2xl border border-white/10 bg-black/40 p-3 text-center"
+                >
+                  <div class="text-sm font-extrabold">Fun</div>
+                  <div class="text-xs text-white/60">Great for groups</div>
                 </div>
               </div>
 
-              <p class="mt-4 text-xs text-white/50">
+              <div class="mt-4 text-xs text-white/50">
                 Demo note: photos are placeholders. Replace with your real food
                 photos anytime.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience -->
-      <section id="experience" class="border-t border-white/10">
-        <div class="mx-auto max-w-6xl px-4 py-14">
-          <h2 class="section-title">The Experience</h2>
-          <p class="mt-3 max-w-2xl text-white/70">
-            Pick your ingredients. Choose your sauce. Watch it cook. Simple
-            workflow, big flavor.
-          </p>
-
-          <div class="mt-10 grid gap-4 md:grid-cols-3">
-            <div class="feature">
-              <div class="feature-kicker">01</div>
-              <div class="feature-title">Choose Your Base</div>
-              <div class="feature-text">
-                Noodles, rice, greens, or go pure protein.
-              </div>
-            </div>
-            <div class="feature">
-              <div class="feature-kicker">02</div>
-              <div class="feature-title">Stack Ingredients</div>
-              <div class="feature-text">
-                Meats, veggies, and add-ons. Your rules.
-              </div>
-            </div>
-            <div class="feature">
-              <div class="feature-kicker">03</div>
-              <div class="feature-title">Sauce + Sizzle</div>
-              <div class="feature-text">
-                Mix a signature sauce, then watch the grill magic.
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Menu highlights -->
-      <section id="menu" class="border-t border-white/10">
-        <div class="mx-auto max-w-6xl px-4 py-14">
-          <div
-            class="flex flex-col gap-2 md:flex-row md:items-end md:justify-between"
-          >
+    <!-- Menu -->
+    <section id="menu" class="border-t border-white/10">
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <h2 class="text-4xl font-black tracking-tight md:text-5xl">
+          Menu Highlights
+        </h2>
+        <p class="mt-3 max-w-2xl text-white/70">
+          Keep it simple on day one: top sellers, buffet details, and a clean
+          call to action.
+        </p>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <div class="text-sm font-bold tracking-wide text-yellow-300">
+              Build Your Bowl
+            </div>
+            <div class="mt-2 text-xl font-extrabold">Mongolian BBQ</div>
+            <div class="mt-2 text-white/70">
+              Choose meats, veggies, noodles, and signature sauces. We grill it
+              fresh.
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <div class="text-sm font-bold tracking-wide text-yellow-300">
+              Simmer + Share
+            </div>
+            <div class="mt-2 text-xl font-extrabold">Hot Pot</div>
+            <div class="mt-2 text-white/70">
+              Cozy broth, fresh ingredients, and a fun table experience.
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <div class="text-sm font-bold tracking-wide text-yellow-300">
+              Best Value
+            </div>
+            <div class="mt-2 text-xl font-extrabold">All-You-Can-Eat</div>
+            <div class="mt-2 text-white/70">
+              Great for families and groups. Ask about buffet details.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Assistant -->
+    <section id="assistant" class="border-t border-white/10">
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <h2 class="text-4xl font-black tracking-tight md:text-5xl">
+          AI Assistant
+        </h2>
+        <p class="mt-3 max-w-2xl text-white/70">
+          Optional upgrade: automated FAQs, hours, specials, and event
+          inquiries.
+        </p>
+
+        <div class="mt-10 rounded-3xl border border-white/10 bg-white/5 p-8">
+          <div class="grid gap-6 md:grid-cols-2 md:items-center">
             <div>
-              <h2 class="section-title">Menu Highlights</h2>
-              <p class="mt-3 max-w-2xl text-white/70">
-                This is a demo layout. Swap in your real items and pricing
-                anytime.
-              </p>
+              <div class="text-sm font-bold tracking-wide text-yellow-300">
+                Upgrade Path
+              </div>
+              <div class="mt-2 text-2xl font-extrabold">
+                Instant answers for customers
+              </div>
+              <ul class="mt-4 list-disc space-y-2 pl-5 text-white/70">
+                <li>Hours, location, parking, and buffet pricing</li>
+                <li>Group reservations and birthday inquiries</li>
+                <li>Menu questions and ingredient guidance</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-black/40 p-6">
+              <div class="text-sm font-bold">Demo Note</div>
+              <div class="mt-2 text-white/70">
+                AI is optional and can be added later. The core site is static
+                and fast.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Family Dinners -->
+    <section id="family" class="border-t border-white/10">
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <h2 class="text-4xl font-black tracking-tight md:text-5xl">
+          Family Dinners
+        </h2>
+        <p class="mt-3 max-w-2xl text-white/70">
+          Great for groups. Great for celebrations. Bring the crew.
+        </p>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <div class="text-xl font-extrabold">Group-Friendly Seating</div>
+            <div class="mt-2 text-white/70">
+              Easy to host birthdays and big dinners.
+            </div>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <div class="text-xl font-extrabold">Fast Turnaround</div>
+            <div class="mt-2 text-white/70">
+              Build-and-go flow keeps things moving.
+            </div>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <div class="text-xl font-extrabold">Custom For Everyone</div>
+            <div class="mt-2 text-white/70">
+              Everyone eats what they actually want.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Location -->
+    <section id="contact" class="border-t border-white/10">
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <h2 class="text-4xl font-black tracking-tight md:text-5xl">
+          Location & Hours
+        </h2>
+        <p class="mt-3 max-w-2xl text-white/70">
+          For the demo, we’re using a safe “search” link. Replace with your
+          exact address and a real map embed when ready.
+        </p>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <div class="text-sm font-semibold text-white/80">Call</div>
+            <a
+              href="tel:+17079995443"
+              class="mt-2 inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm font-bold text-white/90 hover:bg-white/5"
+            >
+              📞 (707) 999-5443
+            </a>
+
+            <div class="mt-6 text-sm font-semibold text-white/80">
+              Directions
             </div>
             <a
-              href="#contact"
-              class="inline-flex w-fit items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/90 hover:border-white/30"
+              class="mt-2 inline-flex items-center justify-center rounded-full bg-yellow-400 px-4 py-2 text-sm font-extrabold text-black hover:bg-yellow-300"
+              href="https://www.google.com/maps/search/?api=1&query=Wah+Sing+Mongolian+BBQ+%26+Hot+Pot+Vacaville"
+              target="_blank"
+              rel="noreferrer"
             >
-              📍 Get Directions
+              Open in Google Maps →
             </a>
-          </div>
 
-          <div class="mt-10 grid gap-4 md:grid-cols-3">
-            <div class="menu-card">
-              <div class="menu-title">All-You-Can-Eat Buffet</div>
-              <div class="menu-text">
-                Unlimited bowls, unlimited combinations.
-              </div>
-            </div>
-            <div class="menu-card">
-              <div class="menu-title">Hot Pot Favorites</div>
-              <div class="menu-text">
-                Warm, rich broths with fresh ingredients.
-              </div>
-            </div>
-            <div class="menu-card">
-              <div class="menu-title">Signature Sauces</div>
-              <div class="menu-text">
-                Sweet, spicy, garlic, and house blends.
+            <div class="mt-6 text-sm font-semibold text-white/80">Hours</div>
+            <div class="mt-2 text-sm text-white/70">
+              <div>Mon–Thu: 11:00 AM – 9:00 PM</div>
+              <div>Fri–Sat: 11:00 AM – 10:00 PM</div>
+              <div>Sun: 11:00 AM – 9:00 PM</div>
+              <div class="mt-2 text-xs text-white/50">
+                Update these to your real hours.
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Design Bowl -->
-      <section id="design" class="border-t border-white/10">
-        <div class="mx-auto max-w-6xl px-4 py-14">
-          <h2 class="section-title">Design Your Bowl</h2>
-          <p class="mt-3 max-w-2xl text-white/70">
-            Demo version: this collects selections and shows a clean summary.
-            Later, we can connect this to SMS, email, or a POS.
-          </p>
-
-          <div class="mt-10 grid gap-6 md:grid-cols-2">
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <form id="bowlForm" class="grid gap-4">
-                <div>
-                  <label class="block text-sm font-medium text-white/80"
-                    >Base</label
-                  >
-                  <select
-                    id="base"
-                    class="mt-2 w-full rounded-xl bg-black/50 p-3 text-white outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-yellow-400/50"
-                  >
-                    <option>Noodles</option>
-                    <option>Rice</option>
-                    <option>Greens</option>
-                    <option>Just Protein</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label class="block text-sm font-medium text-white/80"
-                    >Protein</label
-                  >
-                  <select
-                    id="protein"
-                    class="mt-2 w-full rounded-xl bg-black/50 p-3 text-white outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-yellow-400/50"
-                  >
-                    <option>Beef</option>
-                    <option>Chicken</option>
-                    <option>Pork</option>
-                    <option>Lamb</option>
-                    <option>Tofu</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label class="block text-sm font-medium text-white/80"
-                    >Veggies</label
-                  >
-                  <div
-                    class="mt-2 grid grid-cols-2 gap-2 text-sm text-white/80"
-                  >
-                    <label class="checkbox"
-                      ><input type="checkbox" value="Bok Choy" /> Bok
-                      Choy</label
-                    >
-                    <label class="checkbox"
-                      ><input type="checkbox" value="Broccoli" />
-                      Broccoli</label
-                    >
-                    <label class="checkbox"
-                      ><input type="checkbox" value="Onion" /> Onion</label
-                    >
-                    <label class="checkbox"
-                      ><input type="checkbox" value="Mushroom" />
-                      Mushroom</label
-                    >
-                  </div>
-                </div>
-
-                <div>
-                  <label class="block text-sm font-medium text-white/80"
-                    >Sauce Style</label
-                  >
-                  <select
-                    id="sauce"
-                    class="mt-2 w-full rounded-xl bg-black/50 p-3 text-white outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-yellow-400/50"
-                  >
-                    <option>House</option>
-                    <option>Garlic Soy</option>
-                    <option>Sweet Chili</option>
-                    <option>Spicy</option>
-                  </select>
-                </div>
-
-                <button
-                  type="submit"
-                  class="mt-2 rounded-full bg-yellow-400 px-6 py-3 text-sm font-semibold text-black hover:bg-yellow-300"
-                >
-                  Build My Bowl ✅
-                </button>
-              </form>
-            </div>
-
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <div class="text-sm font-semibold text-white/80">
-                Your Bowl Summary
-              </div>
-              <div
-                id="summary"
-                class="mt-4 rounded-2xl border border-white/10 bg-black/40 p-4 text-white/80"
-              >
-                Choose options on the left, then click “Build My Bowl”.
-              </div>
-
-              <div
-                class="mt-6 rounded-2xl border border-yellow-400/20 bg-yellow-400/10 p-4 text-xs text-yellow-100"
-              >
-                AI Assistant is intentionally disabled on this demo build so no
-                API keys are exposed in the browser. If you want AI ordering
-                later, we’ll do it safely via a server (Cloudflare Worker or
-                your VPS).
-              </div>
+          <!-- Embedded Google Map -->
+          <div
+            class="rounded-2xl border border-white/10 bg-white/5 overflow-hidden"
+          >
+            <div class="relative aspect-[4/3] md:aspect-[16/10]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2009.417984602407!2d-121.95463269459343!3d38.350739411415105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80853d4359265c49%3A0x82177a8efea3be0!2sWah%20Sing%20Mongolian%20BBQ%20%26%20Hot%20Pot!5e0!3m2!1sen!2sus!4v1766863972645!5m2!1sen!2sus"
+                class="absolute inset-0 h-full w-full"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Family Dinners -->
-      <section id="family" class="border-t border-white/10">
-        <div class="mx-auto max-w-6xl px-4 py-14">
-          <h2 class="section-title">Family Dinners</h2>
-          <p class="mt-3 max-w-2xl text-white/70">
-            Great for groups. Great for celebrations. Bring the crew.
-          </p>
-
-          <div class="mt-10 grid gap-4 md:grid-cols-3">
-            <div class="feature">
-              <div class="feature-title">Group-Friendly Seating</div>
-              <div class="feature-text">
-                Easy to host birthdays and big dinners.
-              </div>
-            </div>
-            <div class="feature">
-              <div class="feature-title">Fast Turnaround</div>
-              <div class="feature-text">
-                Build-and-go flow keeps things moving.
-              </div>
-            </div>
-            <div class="feature">
-              <div class="feature-title">Custom For Everyone</div>
-              <div class="feature-text">
-                Everyone eats what they actually want.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact / Location -->
-      <section id="contact" class="border-t border-white/10">
-        <div class="mx-auto max-w-6xl px-4 py-14">
-          <h2 class="section-title">Location & Hours</h2>
-          <p class="mt-3 max-w-2xl text-white/70">
-            Find us fast, tap for directions, or view the map below.
-          </p>
-
-          <div class="mt-10 grid gap-6 md:grid-cols-2">
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <div class="text-sm font-semibold text-white/80">Call</div>
-              <a
-                href="tel:+17079995443"
-                class="mt-2 inline-flex rounded-full border border-white/15 px-4 py-2 text-sm text-white/90 hover:border-white/30"
-              >
-                📞 (707) 999-5443
-              </a>
-
-              <div class="mt-6 text-sm font-semibold text-white/80">
-                Directions
-              </div>
-              <a
-                class="mt-2 inline-flex rounded-full bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300"
-                href="https://www.google.com/maps/place/Wah+Sing+Mongolian+BBQ+%26+Hot+Pot/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Open in Google Maps ➜
-              </a>
-
-              <div class="mt-6 text-sm font-semibold text-white/80">Hours</div>
-              <div class="mt-2 text-sm text-white/70">
-                <div>Tue–Sat: 11:00 AM – 3:00 PM, 4:00 PM – 9:00 PM</div>
-                <div>Sun: 12:00 PM – 3:00 PM, 4:00 PM – 9:00 PM</div>
-                <div class="mt-2 text-xs text-white/50">
-                  Closed every Monday.
-                </div>
-              </div>
-            </div>
-
-            <!-- Embedded Map -->
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <div class="text-sm font-semibold text-white/80">Map</div>
-
-              <div
-                class="mt-4 overflow-hidden rounded-2xl border border-white/10 bg-black/40"
-              >
-                <div
-                  style="position: relative; width: 100%; padding-top: 56.25%"
-                >
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2009.417984602407!2d-121.95463269459343!3d38.350739411415105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80853d4359265c49%3A0x82177a8efea3be0!2sWah%20Sing%20Mongolian%20BBQ%20%26%20Hot%20Pot!5e0!3m2!1sen!2sus!4v1766863972645!5m2!1sen!2sus"
-                    width="600"
-                    height="450"
-                    style="
-                      border: 0;
-                      position: absolute;
-                      inset: 0;
-                      width: 100%;
-                      height: 100%;
-                    "
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    title="Wah Sing Mongolian BBQ & Hot Pot Map"
-                  ></iframe>
-                </div>
-              </div>
-
-              <div
-                class="mt-4 rounded-2xl border border-white/10 bg-black/40 p-4 text-xs text-white/60"
-              >
-                Tip: If the map ever shows blank, it is usually blocked by
-                browser privacy extensions. Try opening in an incognito window
-                or disable the blocker for this site.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
     <footer class="border-t border-white/10">
-      <div
-        class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-10 md:flex-row md:items-center md:justify-between"
-      >
-        <div class="text-xs text-white/60">
-          © <span id="year"></span> Wah Sing. All rights reserved.
-        </div>
-        <div class="text-xs text-white/60">
-          Built for demo on Cloudflare Pages.
-        </div>
+      <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-white/60">
+        © <span id="year"></span> Wah Sing Mongolian BBQ & Hot Pot. Demo site
+        for preview and portfolio.
       </div>
     </footer>
 
     <script>
-      // Bowl builder (demo)
-      const form = document.getElementById("bowlForm");
-      const summary = document.getElementById("summary");
-
-      function getCheckedValues() {
-        const checks = Array.from(
-          document.querySelectorAll(
-            'label.checkbox input[type="checkbox"]:checked'
-          )
-        );
-        return checks.map((c) => c.value);
-      }
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const base = document.getElementById("base").value;
-        const protein = document.getElementById("protein").value;
-        const sauce = document.getElementById("sauce").value;
-        const veggies = getCheckedValues();
-
-        const vegText = veggies.length
-          ? veggies.join(", ")
-          : "No veggies selected";
-        summary.innerHTML = `
-        <div class="text-base font-semibold text-white">✅ Bowl Ready</div>
-        <div class="mt-2 text-sm text-white/80"><span class="text-white/60">Base:</span> ${base}</div>
-        <div class="mt-1 text-sm text-white/80"><span class="text-white/60">Protein:</span> ${protein}</div>
-        <div class="mt-1 text-sm text-white/80"><span class="text-white/60">Veggies:</span> ${vegText}</div>
-        <div class="mt-1 text-sm text-white/80"><span class="text-white/60">Sauce:</span> ${sauce}</div>
-        <div class="mt-4 text-xs text-white/50">Demo only. Next step can be sending this to staff via SMS or email.</div>
-      `;
-      });
-
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
