@@ -1,0 +1,140 @@
+/* Wah Sing demo styles (keep it minimal, let Tailwind do the heavy lifting) */
+:root{
+  --brand-yellow: #facc15;
+  --brand-red: #ef4444;
+}
+
+html, body{
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.site-logo{
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.hero-title{
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  font-size: clamp(44px, 6vw, 78px);
+}
+
+.hero-accent{
+  display:block;
+  color: var(--brand-red);
+  font-style: italic;
+}
+
+.section-title{
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: clamp(26px, 3.2vw, 40px);
+  letter-spacing: -0.01em;
+}
+
+.hero-bg{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(1200px 600px at 20% 0%, rgba(250,204,21,0.18), transparent 60%),
+    radial-gradient(900px 500px at 90% 30%, rgba(239,68,68,0.18), transparent 55%),
+    linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.85));
+  pointer-events:none;
+}
+
+.hero-card{
+  border-radius: 24px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.10);
+  padding: 16px;
+}
+
+.pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 6px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.18em;
+}
+
+.feature{
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.03);
+  padding: 18px;
+}
+
+.feature-kicker{
+  font-size: 12px;
+  color: rgba(250,204,21,0.85);
+  letter-spacing: 0.25em;
+  margin-bottom: 10px;
+}
+
+.feature-title{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.feature-text{
+  margin-top: 6px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.70);
+}
+
+.menu-card{
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.03);
+  padding: 18px;
+}
+
+.menu-title{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.menu-text{
+  margin-top: 6px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.70);
+}
+
+.mini-card{
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(0,0,0,0.35);
+  padding: 12px;
+  text-align: center;
+}
+
+.mini-title{
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.mini-sub{
+  margin-top: 2px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.65);
+}
+
+label.checkbox{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(0,0,0,0.30);
+  padding: 10px 12px;
+  border-radius: 14px;
+}
+
+label.checkbox input{
+  accent-color: var(--brand-yellow);
+}
